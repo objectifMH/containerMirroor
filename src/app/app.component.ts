@@ -7,6 +7,9 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'containerMirroor';
+  container = "";
+  interval;
+  timeLeft: number = 5;
 
 @HostListener('window:scroll', ['$event'])
 
@@ -18,5 +21,23 @@ onWindowScroll(e) {
     } else {
       element.classList.remove('opacity_true');
     }
+  }
+
+  ngOnInit(): void {
+    this.timerContainer();
+  }
+
+  timerContainer() {
+    let inc = 0 ; 
+    this.interval = setInterval(() => {
+      
+      if(this.timeLeft >= 0) {
+        this.timeLeft--;
+        inc = -this.timeLeft;
+        this.container = "container".slice(0, "container".length + inc);
+      } else {
+        this.timeLeft = "container".length;
+      }
+    },100)
   }
 }

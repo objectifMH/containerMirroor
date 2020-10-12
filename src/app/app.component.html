@@ -11,7 +11,7 @@
       <div class="head_right p-3">
           <ul class="ul_pc">
               <li class="nav-item" >
-                  <div    class="nav-link link-logo a_search" 
+                  <div    class="nav-link link-logo a_search d-flex align-items-center" 
                           title="Search"
                   >
                       <!-- <form [formGroup]="monForm" class="form_search" > 
@@ -32,7 +32,7 @@
                       </form> -->
                       <span class="material-icons search_material"  >
                         search
-                    </span>
+                      </span>
                   </div>
               </li>
               <li class="nav-item">
@@ -130,6 +130,8 @@
   </div> -->
 </header>
 
+<aside>
+  
 <div id="carouselExampleIndicators" class="carousel slide position-relative" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -157,11 +159,14 @@
   </a>
 
   <div class="col-md-5 p-lg-5 mx-auto my-5 position-absolute punny_headline">
-    <h1 class="display-4 font-weight-bold">Villa Container</h1>
+    <h1 class="display-4 font-weight-bold">Villa 
+      <span class="span_container">
+        {{container}}
+      </span></h1>
     <p class="lead font-weight-normal">
       And an even wittier subheading to boot.
       Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-    <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <a class="btn btn-outline-secondary punny_a" href="#">En savoir plus</a>
   </div>
 
 </div>
@@ -169,24 +174,35 @@
 <div class="villas">
   <div class="col-md-8" class="our_villas container">
     <p class="subtitle text-primary">Nos Villas en Guadeloupe</p>
-    <h2>Notre guide, noos tests</h2>
+    <h2>Notre guide</h2>
   </div>
 </div>
 
 
 
 <div class="container_img container-fluid d-flex flex-column justify-content-between ">
-  <div class="top container_img container-fluid d-flex flex-row justify-content-between ">
-    <img  src="assets/img/7.jpg">
-    <img  src="assets/img/2.jpg">
+  <div class="top container_img container d-flex flex-row justify-content-between ">
+    <div class="top container_img container-fluid d-flex flex-row justify-content-between ">
+      <div class="position-relative right">
+        <h3 class="h3_villa">Villa Bababar</h3>
+        <img  src="assets/img/1.jpg">
+      </div>
+      <div class="position-relative left">
+        <h3 class="h3_villa">Villa Amesata</h3>
+        <img  src="assets/img/2.jpg">
+      </div>
+
+    </div>
   </div>
-  <div class="bottom container-fluid d-flex flex-row justify-content-between">
-    <img  src="assets/img/3.jpg">
+  <div class="bottom container d-flex flex-row justify-content-between">
+    <img  src="assets/img/7.jpg">
     <img  src="assets/img/4.jpg">
     <img  src="assets/img/5.jpg">
     <img  src="assets/img/6.jpg">
   </div>
 </div>
+
+</aside>
 
 
 <section>
