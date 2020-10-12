@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+$back: white;
+$back-main-gradient: linear-gradient(to bottom,white 0, grey 100%);
+$back-main: #5a135a;
+
+$color_orange: orange;
+$color_grey: grey;
+$color_turquoise: turquoise;
+$color: grey;
+$shadow : rgba(0,0,0,0.75);
+$border: turquoise;
+
+
+html, body { 
+    height: 100%; 
+}
+body { margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: $back-main-gradient !important;
+    color: $color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: AvenirNextLTPro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
