@@ -205,7 +205,7 @@
 
 
 .container_headline_section {
-    background: white;
+    //background: white;
     padding: 45px 25px 35px;
     font-family: Poppins,sans-serif;
 
@@ -234,7 +234,7 @@
 }
 
 aside { 
-    background: orange;
+    background: white;
     .carousel {
         background: white;
     
@@ -359,12 +359,13 @@ aside {
 }
 
 
-.background_grey {
-    background: $color_grey !important;
+.background_grey_turquoise {
+    background: linear-gradient(150deg, grey 0%, turquoise 100%);
 }
 
-.background_orange {
-    background: linear-gradient(150deg, orange 0%, turquoise 100%);}
+.background_orange_turquoise {
+    background: linear-gradient(150deg, orange 0%, turquoise 100%);
+}
 
 .reservez_maintenant {
     height: 200px;
