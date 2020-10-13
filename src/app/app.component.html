@@ -131,7 +131,7 @@
 </header>
 
 <aside>
-  
+<!-- Carousel  -->
 <div id="carouselExampleIndicators" class="carousel slide position-relative" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -158,18 +158,22 @@
     <span class="sr-only">Next</span>
   </a>
 
-  <div class="col-md-5 p-lg-5 mx-auto my-5 position-absolute punny_headline">
-    <h1 class="display-4 font-weight-bold">Villa 
-      <span class="span_container">
-        {{container}}
-      </span></h1>
-    <p class="lead font-weight-normal">
-      And an even wittier subheading to boot.
-      Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-    <a class="btn btn-outline-secondary punny_a" href="#">En savoir plus</a>
-  </div>
-
+  <!-- jumbotron -->
+    <div class="col-md-5 p-lg-5 mx-auto my-5 position-absolute punny_headline">
+      <h1 class="display-4 font-weight-bold">Villa 
+        <span class="span_container">
+          {{container}}
+        </span></h1>
+      <p class="lead font-weight-normal">
+        And an even wittier subheading to boot.
+        Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+      <a class="btn btn-outline-secondary punny_a background_orange_box_shadow" href="#">En savoir plus</a>
+    </div>
+  <!-- Fin jumbotron -->
 </div>
+<!-- Fin Carousel -->
+
+<!-- Nos Villas en guadeloupe -->
 <div class="container_headline_section">
   <div class="col-md-8" class="headline_section container">
     <p class="headline_first text-primary">Nos Villas en Guadeloupe</p>
@@ -183,14 +187,14 @@
         <h3 class="h3_villa">Villa Bababar</h3>
         <img  src="assets/img/1.jpg">
         <a routerLink="#" title="Aller à Villa Babacar" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a>
       </div>
       <div class="position-relative left">
         <h3 class="h3_villa">Villa Amesata</h3>
         <img  src="assets/img/2.jpg">
         <a routerLink="#" title="Aller à Villa Amesata" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a>
       </div>
 
@@ -203,7 +207,7 @@
       <h3>
         Venez nous decouvrir, consultez nos disponibilités !!
       </h3>
-      <div class="btn btn-success">
+      <div class="btn  background_orange_box_shadow">
         Réservez
       </div>
     </div>
@@ -218,8 +222,6 @@
   </div>
 
   <div class="bottom container d-flex flex-row justify-content-between">
-
-    
 
     <div class="container_annonce d-flex flex-column justify-content-between">
       <img  src="assets/img/11.jpg">
@@ -241,7 +243,7 @@
           <span class="d-block">· 2 salles de bain</span>
         </p>
         <a routerLink="#" title="" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a> 
       </div>
     </div>
@@ -265,7 +267,7 @@
           <span class="d-block">· 1 salle de bain</span>
         </p>
         <a routerLink="#" title="" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a>
       </div>
     </div>
@@ -289,7 +291,7 @@
           <span class="d-block">· 2 salles de bain</span>
         </p>
         <a routerLink="#" title="" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a>
       </div>
     </div>
@@ -312,13 +314,16 @@
           <span class="d-block">· 4 lits </span>
           <span class="d-block">· 2 salles de bain</span>
         </p>
-        <a routerLink="#" title="" class="savoir_plus">
-          <span class="btn btn-success">Découvrir</span>
+        <a routerLink="#" title="" class="savoir_plus pt-5">
+          <span class="btn background_orange_box_shadow">Découvrir</span>
         </a>
       </div>
     </div>
   </div>
+
+
 </div>
+<!-- Fin nos villas en guadeloupe -->
 
 </aside>
 
@@ -328,8 +333,29 @@
   </h3>
 </div > -->
 
+<!-- avis -->
+<div class="section_avis container-fluid background_grey_turquoise">
+  <div class="container container_avis">
+    <img src="assets/owner/anto.jpg ">
+    <h3>
+      <span class="material-icons">
+        format_quote
+      </span>
+      Ce projet a commencé par une envie de faire une activité en lien avec l'écologie.
+      <span class="material-icons">
+        format_quote
+      </span>
+      <span class="author">—Antonin Sar</span>
+  </h3>
+  
+  </div>
+  
+</div >
 
-<div class="section_engagements background_grey_turquoise" >
+<!-- Fin avis -->
+
+<!-- Nos engagements -->
+<div class="section_engagements " >
   <div class="container_headline_section ">
     <div class="col-md-8" class="headline_section container">
       <p class="headline_first text-primary">Nos Engagements</p>
@@ -385,6 +411,8 @@
     </div>
   </div>
 </div>
+<!-- Fin nos engagements -->
+
 
 
 
@@ -393,35 +421,67 @@
 
 </section> -->
 
-<footer>
-  <div class="footer">
-      <ul>
-          <li class=" ">
-              <a class="nav-link link-logo" routerLink='/main' title="Home">
-                  <div class="container_logo_bottom">
-                      <span class="logo_bottom_t">8Mirr∞r</span> <span class="logo_bottom_b">Group</span>
-                  </div>
-              </a>
-          </li>
-          <!-- <li>
-              <a href='https://pokeapi.co/' target="_blank" title="PokéApi"> <img class="card-img-top"
-                      src="assets/img/papi.png" alt="PokéApi" />
-              </a>
-          </li> -->
-          <li><span class="about_bottom">About Us</span>
-              <div class="reseaux_bottom">
-                  <!-- <a routerLink="/admin" title="Admin Michael Hatchi">
-                      <fa-icon [icon]="faUserCircle"></fa-icon>
-                  </a>
-                  <a href='https://www.linkedin.com/in/m-hatchi-bb4b49156/' title="Linkedin" target="_blank">
-                      <fa-icon class="fa-git" [icon]="faLinkedinIn"></fa-icon>
-                  </a>
-                  <a href='https://github.com/objectifMH/pokemirroor' target="_blank" title="Github">
-                      <fa-icon [icon]="faGithub"></fa-icon>
-                  </a> -->
-              </div>
-          </li>
-      </ul>
+<footer class="background_orange_turquoise">
+  
+  <div class="newsletter_container">
+    <div class="left">
+      <h4>
+        Abonnez-vous à notre Newsletter
+      </h4>
+      <p>Pour être les premiers informés des actus et offres promotionnelles.
+      </p>
+    </div>
+    <div class="right">
+      <input class="text" type='text' placeholder="Votre adresse courriel"> 
+      <input class="submit btn background_orange_box_shadow" type="submit" value="S'inscrire">
+    </div>
+  </div>
+  <div class="reseaux_sociaux_container">
+      <h4>
+        Suivez-nous sur nos réseaux : 
+      </h4>
+    <div class="bottom">
+      <a routerLink="#" title="Facebook ContainerMirroor">
+        <fa-icon [icon]="faFacebook"></fa-icon>
+      </a>
+      <a routerLink="#" title="Twitter ContainerMirroor">
+        <fa-icon [icon]="faTwitter"></fa-icon>
+      </a>
+      <a routerLink="#" title="Instagram containerMirroor">
+        <fa-icon [icon]="faInstagram"></fa-icon>
+      </a>
+      <a routerLink="#" title="Youtube containerMirroor">
+        <fa-icon [icon]="faYoutube"></fa-icon>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer background_grey_turquoise">
+    <ul>
+      <li>Accueil</li>
+      <li>A propos de nous</li>
+      <li>Les villas</li>
+      <li>FAQ</li>
+      <li>Blog</li>
+      <li>Mon espace</li>
+      <li>Nous contacter</li>
+    </ul>
+    <div class="container_logo_adresse">
+      <div class="container_logo_bottom">
+        <span class="logo_bottom_t">8Mirr∞r</span>
+        <span class="logo_bottom_b">Group</span>
+      </div>
+      <div class="bottom">
+        <span class="d-block">32 rue des petites Anolies</span>
+        <span class="d-block">Résidence les conteneurs en folie</span>
+        <span class="d-block">97543, St-François, Guadeloupe</span>
+      </div>
+    </div>
+    <hr>
+    
+    <hr>
       <div class="footer_bottom">
           <span>©2021 Copyright.fr. All right reserved.</span>
       </div>

@@ -1,4 +1,9 @@
 import { Component, HostListener } from '@angular/core';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,6 +15,14 @@ export class AppComponent {
   container = "";
   interval;
   timeLeft: number = 5;
+
+  faLinkedinIn = faLinkedinIn;
+  faGithub = faGithub;
+  faUserCircle = faUserCircle;
+  faFacebook = faFacebook;
+  faTwitter = faTwitter;
+  faInstagram = faInstagram; 
+  faYoutube = faYoutube;
 
 @HostListener('window:scroll', ['$event'])
 
@@ -40,4 +53,6 @@ onWindowScroll(e) {
       }
     },100)
   }
+
+
 }
