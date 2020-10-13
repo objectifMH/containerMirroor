@@ -188,7 +188,7 @@
 }
 
 .head_container.opacity_true {
-    opacity: 0.9 ;
+    opacity: 0.8 ;
     background:#f3f3f3;
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);       
     .ul_pc {
@@ -204,6 +204,34 @@
 }
 
 
+.container_headline_section {
+    background: white;
+    padding: 45px 25px 35px;
+    font-family: Poppins,sans-serif;
+
+    .headline_section {
+
+        .headline_first {
+            text-transform: uppercase;
+            color: orange !important;
+        
+            margin-bottom: 0;
+            letter-spacing: .2em;
+            font-weight: 700;
+        }
+    
+        h2 {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+            font-family: Poppins,sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+                
+            color: black;
+            text-align: left;
+        }
+    }
+}
 
 aside { 
     background: orange;
@@ -248,34 +276,7 @@ aside {
         }
     }
 
-    .villas {
-        background: white;
-        padding: 45px 25px 35px;
-        font-family: Poppins,sans-serif;
     
-        .our_villas {
-
-            .subtitle {
-                text-transform: uppercase;
-                color: orange !important;
-            
-                margin-bottom: 0;
-                letter-spacing: .2em;
-                font-weight: 700;
-            }
-        
-            h2 {
-                font-size: 2rem;
-                margin-bottom: .5rem;
-                font-family: Poppins,sans-serif;
-                font-weight: 700;
-                line-height: 1.3;
-                    
-                color: black;
-                text-align: left;
-            }
-        }
-    }
 
     .container_img {
         padding-bottom: 30px;
@@ -289,6 +290,12 @@ aside {
                 
             img {
                 width: 98%;
+            }
+
+            .savoir_plus {
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
             }
         }
 
@@ -305,14 +312,130 @@ aside {
 
             }
         }
+
         .bottom {
             margin-top: 20px;
-            img {
-                width: 24%;
+            color: black;
+
+            .container_annonce {
+                border: 1px solid black;
+                margin: 5px;
+                img {
+                    width: 100%;
+                    height: 150px;
+                }
+
+                .text {
+                    padding: 15px;
+                    text-align: left;
+                    position: relative;
+                    h4 {
+                        color: $color_orange;
+                        font-weight: bolder;
+                    }
+
+                    .grey {
+                        color: $color_grey;
+                        font-weight: bold;
+                    }
+
+                    .savoir_plus {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                    }
+                }
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+                }
             }
+            
         }
     }
     
+}
+
+
+.background_grey {
+    background: $color_grey !important;
+}
+
+.background_orange {
+    background: linear-gradient(150deg, orange 0%, turquoise 100%);}
+
+.reservez_maintenant {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    h3 {
+        font-size: 2em;
+        font-weight: bolder;
+        padding: 15px;
+        color: white;
+        }
+    }
+}
+
+
+.section_engagements {
+    .engagements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+
+        .container_engagements {
+            width: 33%;
+            .top {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                color: $color_orange;
+
+                .material-icons {
+                    font-size: 3em;
+                }
+            }
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h4 {
+                    text-align: center;
+                    padding: 5px;
+                    color: white;
+                }
+
+                p {
+                    text-align: center;
+                    padding: 10px;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+.section_localisation {
+    //background: linear-gradient(150deg, turquoise 0%, orange 100%);
+    height: 500px;
+    background: turquoise;
 }
 
 section {
