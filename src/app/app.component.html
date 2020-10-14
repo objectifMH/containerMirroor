@@ -80,14 +80,14 @@
       </div>
   </div>
   <!-- Menu Mobile -->
-  <div class="mobile_menu" [ngClass]="{'fade d-none': isShowMenu, 'show': !isShowMenu }">
+  <div class="mobile_menu" [ngClass]="{'fade d-none': '', 'show': '' }">
       <div class="head_right p-3">
           <ul class="ul_pc">
               <li class="nav-item" >
                   <div    class="nav-link link-logo a_search" 
                           title="Search"
                   >
-                      <form [formGroup]="monForm" class="form_search" > 
+                      <!-- <form [formGroup]="monForm" class="form_search" > 
                               <input  type="text" placeholder="Search a pokemon ..." 
                                       formControlName="search" 
                                       class=" form-control search_input" 
@@ -100,30 +100,22 @@
                               <span class="material-icons search_material" (click)="toggleSearch()" >
                                   search
                               </span>
-                      </form>
+                      </form> -->
                   </div>
               </li>
               <li class="nav-item">
-                  <a class="nav-link link-logo a_transition" routerLink='/types' title="Types" routerLinkActive="active">
+                  <a class="nav-link link-logo a_transition" routerLink='#' title="Types" routerLinkActive="active">
                       Types
                   </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link link-logo a_transition" routerLink='/abilities/0/20' title="Abilities"
+                  <a class="nav-link link-logo a_transition" routerLink='#' title="Abilities"
                       routerLinkActive="active">
                       Abilities
                   </a>
               </li>     
               <li class="nav-item position-relative">
-                  <a class="nav-link link-logo a_transition" routerLink='/pokedex' title="Your pokedex"
-                      routerLinkActive="active">
-                      <img  
-                          src='assets/img/pokeball.png'
-                      >
-                  </a>
-                  <span class="badge badge-success total_pokedex">
-                      {{this.nbrMyPokedex}}
-                  </span>
+                  
               </li>
           </ul>
       </div>
