@@ -700,6 +700,137 @@ footer {
     }
 }
 
+
+@media (max-width: 425px) {
+    .head_container .head_right ul {
+        display: none !important;
+    }
+
+    .head_container .head_right .menu_mobile {
+        display: block !important;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 2em;
+        cursor: pointer;
+        color: orange;
+    }
+
+    aside .carousel .punny_headline {
+        top: 90px;
+        right: 80px;
+        display: none;
+
+        h1 {
+            font-size: 1.1em;
+        }
+
+        p {
+            font-size: 1em !important;
+        }
+
+        .punny_a {
+            font-size: 0.9em !important;
+        }
+    }
+
+    aside .container_img .bottom {
+        flex-direction: column !important;
+    }
+
+    aside .container_img .top .right, aside .container_img .top .left {
+        margin-bottom: 9px;
+    }
+
+    .reservez_maintenant .container h3 {
+        font-size: 1.3em;
+    }
+
+    .media_768_none {
+        display:none !important;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    .section_engagements .engagements {
+        flex-direction: column;
+        .container_engagements {
+            width: 100%;
+        }
+    }
+
+    footer .newsletter_container {
+        flex-direction: column;
+    }
+
+    footer .newsletter_container h4 {
+        font-size: 1.2em
+    }
+
+    footer .newsletter_container p {
+        font-size: 1em
+    }
+
+    footer .newsletter_container .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    footer .footer ul li {
+        font-size: 1em;
+    }
+
+    footer .newsletter_container .right .text{
+        width: 200px !important;
+        height: 40px;
+
+        &::placeholder {
+            padding: 10px 15px !important;
+            font-size: 1em !important;
+            font-weight: normal !important;
+        }
+    }
+
+    .submit {
+        margin-left: 5px;
+        width: 130px;
+        height: 40px !important;
+        font-size: 1em !important;
+        font-weight: normal !important;
+        margin-right: 10px;
+    }
+
+    footer .reseaux_sociaux_container h4{
+        font-size: 1em !important;
+    }
+
+    footer .footer ul {
+        display: none;
+    }
+
+    footer .footer .container_logo_adresse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+
+        .bottom, .middle {
+            font-size: 1em !important;
+            font-weight: normal !important;
+        }
+
+        .middle {
+            margin-bottom: 10px;
+        }
+    }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .punny_headline {
