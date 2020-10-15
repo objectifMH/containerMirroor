@@ -24,6 +24,8 @@ export class AppComponent {
   faInstagram = faInstagram; 
   faYoutube = faYoutube;
 
+  isShowMobileMenu = true;
+
 @HostListener('window:scroll', ['$event'])
 
 onWindowScroll(e) {
@@ -52,6 +54,10 @@ onWindowScroll(e) {
         this.timeLeft = "container".length;
       }
     },100)
+  }
+
+  showMenu() {
+    this.isShowMobileMenu = !this.isShowMobileMenu;
   }
 
 

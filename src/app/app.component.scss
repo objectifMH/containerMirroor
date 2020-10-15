@@ -2,6 +2,147 @@
 
 .mobile_menu {
     display: none;
+    padding-top: 50px;
+    ul {
+        text-decoration: none;
+        list-style: none;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:0;
+        background: linear-gradient(150deg, grey 0%, turquoise 100%) !important;   ;
+        
+        .li_se_connecter {
+            padding-bottom: 15px;
+        }
+
+        a.active {
+            transform: scale(1.15);
+            color: $color_orange;
+        }
+
+        a.active_se_connecter {  
+            border: 2px solid $color_orange;
+            border-radius: 6px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            flex: row;
+            cursor: pointer;
+
+            .material-icons {
+                font-size: 26px;
+            }
+
+            img {
+                max-width: 40px;
+            }
+
+            color: white; 
+            font-size: 1em;
+            font-weight: bolder;
+
+            .form_search {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+
+        a.a_transition {
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.12);
+                color: $color_orange;
+            }
+        } 
+
+        .se_connecter {
+            border: 2px solid $color_orange;
+            border-radius: 4px;
+            padding-bottom: 15px;
+
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: scale(1.13);
+                background: $color_orange;   
+                color: white !important;             
+            }
+        }   
+
+        .search_material {
+            cursor: pointer;
+            cursor: pointer;
+
+            transition: .2s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+                color: orange;
+            }
+
+        }
+
+        .a_search {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .form_search {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+
+                .search_input {
+                    background: $back-main;
+                    margin: 0;
+                    color: $color;
+                    border: 2px solid $color;
+
+                    &.fade {
+                        transition: opacity .15s linear;
+                    }
+                    
+                    &.show {
+                        transition: opacity .35s linear;
+                    }
+
+                    &::placeholder {
+                        color: $color; 
+                        opacity: 0.4;
+                    }       
+                }
+
+                input.ng-touched.ng-valid + .i_close:before {
+                        content:'close';
+                        color: red;
+                        right: 34px !important;
+                        top: 7px;
+                        position: absolute;
+                        cursor: pointer;
+                }
+
+                // .search_material {
+                //     cursor: pointer;
+                //     margin-left: 5px;
+                //     margin-top: 5px;
+                //     cursor: pointer;
+
+                //     transition: .2s ease-in-out;
+                //     &:hover {
+                //         transform: scale(1.2);
+                //     }
+
+                // }
+            }
+        }
+    }
 }
 
 .head_container {
@@ -172,6 +313,7 @@
             }
         }
 
+        // icon menu et close 
         .menu_mobile {
             display: none !important;
         }
@@ -186,6 +328,8 @@
     }
 }
 
+
+// Bar nav bar
 .head_container.opacity_true {
     opacity: 0.8 ;
     background: linear-gradient(150deg, grey 0%, turquoise 100%);
@@ -207,6 +351,7 @@
     }
 }
 
+// Titre 
 .container_headline_section {
     background: pinks;
     padding: 45px 25px 35px;
@@ -808,6 +953,7 @@ footer {
 
     footer .footer ul {
         display: none;
+
     }
 
     footer .footer .container_logo_adresse {
@@ -841,9 +987,9 @@ footer {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) {
-    // .mobile_menu {
-    //     display: block;
-    // }
+    .mobile_menu {
+        display: block;
+    }
 
     .head_container .head_right ul {
         display: none !important;
@@ -857,6 +1003,11 @@ footer {
         font-size: 2em;
         cursor: pointer;
         color: orange;
+
+        transition: .3s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     aside .carousel .punny_headline {
@@ -896,6 +1047,9 @@ footer {
         font-size: 1em
     }
 
+    footer .footer ul {
+        margin: 10px 20px;
+    }
     footer .footer ul li {
         font-size: 1em;
     }
