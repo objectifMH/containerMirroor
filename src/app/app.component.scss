@@ -2,7 +2,8 @@
 
 .mobile_menu {
     display: none;
-    padding-top: 50px;
+    position: static;
+    padding-top: 60px;
     ul {
         text-decoration: none;
         list-style: none;
@@ -327,7 +328,6 @@
         }
     }
 }
-
 
 // Bar nav bar
 .head_container.opacity_true {
@@ -843,6 +843,12 @@ footer {
 }
 
 
+@media (max-width: 320px) {
+    .head_container .head_left .head_logo {
+        font-size: 1.2em !important;
+    }
+}
+
 @media (max-width: 425px) {
     .head_container .head_right ul {
         display: none !important;
@@ -989,6 +995,9 @@ footer {
 @media (max-width: 768px) {
     .mobile_menu {
         display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
     }
 
     .head_container .head_right ul {
@@ -1003,6 +1012,8 @@ footer {
         font-size: 2em;
         cursor: pointer;
         color: orange;
+        
+        z-index: 3000;
 
         transition: .3s ease-in-out;
         &:hover {

@@ -58,6 +58,7 @@ onWindowScroll(e) {
 
   showMenu() {
     this.isShowMobileMenu = !this.isShowMobileMenu;
+    console.log('ohé', this.isShowMobileMenu);
   }
 
 
